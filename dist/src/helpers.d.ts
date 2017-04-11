@@ -1,0 +1,13 @@
+import { ExpiryData } from './metadata';
+export declare function encode(str: string): string;
+export declare function decode(str: string): string;
+export declare const COOKIE_SEP = "; ";
+export declare function isInPast(date: Date): boolean;
+export declare function isString(str: string | Date): boolean;
+export declare function toString(obj: any): string;
+export declare function isNil(item: any): boolean;
+export declare function isNumber(item: any): boolean;
+export declare function isExpired(data: ExpiryData): boolean;
+export declare function is(ctor: any, value: any): boolean;
+export declare function convertFromJSON(data: any): any;
+export declare function serializeDataToString(data: any): string;
